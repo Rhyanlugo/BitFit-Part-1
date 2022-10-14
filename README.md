@@ -1,8 +1,8 @@
-# Android Project 5 - *Name of App Here*
+# Android Project 5 - *Bitfit Part 1*
 
-Submitted by: **Your Name Here**
+Submitted by: **Rhyan Lugo Crespo**
 
-**Name of your app** is a health metrics app that allows users to track ... [TODO] 
+**Bitfit Part 1** is a health metrics app that allows users to track calories. 
 
 Time spent: **X** hours spent in total
 
@@ -46,7 +46,7 @@ Describe any challenges encountered while building the app.
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright [2022] [Rhyan Lugo Crespo]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.

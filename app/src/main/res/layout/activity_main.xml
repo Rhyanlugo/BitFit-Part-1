@@ -4,15 +4,46 @@
 	xmlns:tools="http://schemas.android.com/tools"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
-	tools:context=".MainActivity">
+	tools:context=".MainActivity"
+	android:background="@color/white">
 
-	<TextView
+	<androidx.recyclerview.widget.RecyclerView
+		android:id="@+id/bitfit_recycler_view"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_marginBottom="100dp"
+		app:layout_constraintBottom_toTopOf="@id/add_new_food_button"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		tools:listitem="@layout/bitfit_calorie_item" />
+
+	<Button
+		android:id="@+id/add_new_food_button"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
-		android:text="Hello World!"
+		android:backgroundTint="@color/purple_700"
+		android:text="Add New Food"
+		android:textSize="20sp"
+		android:textStyle="bold"
+		android:textColor="@color/white"
+		app:layout_constraintBottom_toTopOf="@id/caloric_average_display"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent" />
+
+	<TextView
+		android:id="@+id/caloric_average_display"
+		android:layout_width="300dp"
+		android:layout_height="35dp"
+		android:layout_marginBottom="13dp"
+		android:background="@color/purple_700"
+		android:gravity="center"
+		android:text="Average Number of Calories: 1000"
+		android:textColor="@color/white"
+		android:textSize="18sp"
 		app:layout_constraintBottom_toBottomOf="parent"
 		app:layout_constraintEnd_toEndOf="parent"
 		app:layout_constraintStart_toStartOf="parent"
-		app:layout_constraintTop_toTopOf="parent" />
 
+		/>
 </androidx.constraintlayout.widget.ConstraintLayout>

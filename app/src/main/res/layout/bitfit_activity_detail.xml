@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<TextView
+		android:id="@+id/food_text_placement"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Food:"
+		android:textSize="30sp"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toStartOf="@id/food_input"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintVertical_bias="0.369" />
+
+	<EditText
+		android:id="@+id/food_input"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:autofillHints=""
+		android:hint="Enter food"
+		android:inputType="text"
+		android:textColorHint="#78909C"
+		android:textSize="24sp"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toEndOf="@id/food_text_placement"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintVertical_bias="0.365" />
+
+	<TextView
+		android:id="@+id/calories_text_placement"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Calories:"
+		android:textSize="30sp"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toStartOf="@id/calories_input"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@id/food_text_placement"
+		app:layout_constraintVertical_bias="0.123" />
+
+	<EditText
+		android:id="@+id/calories_input"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:autofillHints=""
+		android:hint="Enter Calories"
+		android:inputType="number"
+		android:textColorHint="#78909C"
+		android:textSize="24sp"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toEndOf="@id/calories_text_placement"
+		app:layout_constraintTop_toBottomOf="@+id/food_input"
+		app:layout_constraintVertical_bias="0.1" />
+
+	<Button
+		android:id="@+id/save_food_button"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:backgroundTint="@color/purple_700"
+		android:text="Save Food"
+		android:textSize="20sp"
+		android:textStyle="bold"
+		android:textColor="@color/white"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/calories_text_placement"
+		app:layout_constraintVertical_bias="0.25" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
